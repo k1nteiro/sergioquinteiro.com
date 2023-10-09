@@ -1,3 +1,24 @@
 .maincard {
-  margin: 10px;
+  background-color: #17589D;
+  border-radius: 0;
+  color: white;
+
+  .row {
+    padding: 10px;
+  }
+
+  .firstRow {
+    background-color: #333333;
+    border-radius: 10px;
+    margin: 3%;
+
+    .carousel-inner {
+      border-radius: 10px;
+    }
+  }
+
+  .secondRow {
+    background-color: #404040;
+  }
+
 }
