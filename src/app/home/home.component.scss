@@ -2,23 +2,7 @@
   background-color: #17589D;
   border-radius: 0;
   color: white;
-
-  .row {
-    padding: 10px;
-  }
-
-  .firstRow {
-    background-color: #333333;
-    border-radius: 10px;
-    margin: 3%;
-
-    .carousel-inner {
-      border-radius: 10px;
-    }
-  }
-
-  .secondRow {
-    background-color: #404040;
-  }
-
+  height: calc(100% - 57px); // Se calcula el 100% de la altura restando los 57px del nav
+  width: 100%;
+  position: absolute;
 }
