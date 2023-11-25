@@ -2,7 +2,7 @@
   background-color: #17589D;
   border-radius: 0;
   color: white;
-  height: calc(100% - 57px); // Se calcula el 100% de la altura restando los 57px del nav
+  min-height: calc(100vh - 57px); // Se calcula el 100% de la altura restando los 57px del nav
   width: 100%;
   position: absolute;
 }
