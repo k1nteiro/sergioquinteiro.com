@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomePresentationComponent {
 
-
   goToLinkedIn() : void {
     window.open("https://www.linkedin.com/in/squinteiro/", "_blank");
   }
@@ -23,4 +22,5 @@ export class HomePresentationComponent {
   goToTwitter() : void {
     window.open("https://twitter.com/k1nteiro", "_blank");
   }
+
 }
