@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class HomePresentationComponent {
 
+  // Si se cambia esta propiedad hay que cambiarla también en el DOM (data-bs-interval)
+  private _carrouselInterval: number = 5000;
+
+  constructor() {
+    //TODO Quinteiro: Solución temporal hasta ver por qué no arranca el carrousel de forma automática
+    setTimeout(() => {
+      const button = document.getElementById('nextImageButton');
+      button?.click();
+    }, this._carrouselInterval);
+  }
+
   goToLinkedIn() : void {
     window.open("https://www.linkedin.com/in/squinteiro/", "_blank");
   }
