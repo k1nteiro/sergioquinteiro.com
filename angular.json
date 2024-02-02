@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "k1nteiro.com": {
+    "sergioquinteiro.com": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/k1nteiro.com",
+            "outputPath": "dist/sergioquinteiro.com",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "k1nteiro.com:build:production"
+              "browserTarget": "sergioquinteiro.com:build:production"
             },
             "development": {
-              "browserTarget": "k1nteiro.com:build:development"
+              "browserTarget": "sergioquinteiro.com:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "k1nteiro.com:build"
+            "browserTarget": "sergioquinteiro.com:build"
           }
         },
         "test": {
