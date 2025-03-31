@@ -19,7 +19,7 @@ export class HomePresentationComponent {
   }
 
   goToLinkedIn() : void {
-    window.open("https://www.linkedin.com/in/squinteiro/", "_blank");
+    window.open("https://www.linkedin.com/in/svquinteiro/", "_blank");
   }
 
   goToInstagram() : void {
