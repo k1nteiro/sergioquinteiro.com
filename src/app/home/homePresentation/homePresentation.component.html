@@ -1,12 +1,51 @@
 <div class="card commonMainCard">
+  <!-- Partículas decorativas para efecto tecnológico -->
+  <div class="digital-particle"></div>
+  <div class="digital-particle"></div>
+  <div class="digital-particle"></div>
+  <div class="digital-particle"></div>
+  <div class="digital-particle"></div>
+  
   <div class="mainContainer">
   
     <div class="info">
       <div class="infoBody">
         <div class="name">
-          <h1>Sergio Quinteiro Varela</h1>
+          <h1 data-text="Sergio Quinteiro Varela">Sergio Quinteiro Varela</h1>
         </div>
         <h5 class="population">Lalín, Pontevedra</h5>
+        
+        <!-- Sección de profesión con animación de escribiendo -->
+        <div class="profession">
+          <div class="type-animation">
+            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Fullstack</span>
+            <span class="tech-tag">.Net / .Net Framework</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">Microsoft SQL Server</span>
+          </div>
+        </div>
+        
+        <!-- Breve descripción profesional con línea decorativa -->
+        <div class="bio">
+          <div class="code-line">
+            <span class="code-comment">// Sobre mi perfil profesional</span>
+          </div>
+          <p>Desarrollador de software Fullstack, con experiencia en proyectos para el sector de la Automatización Industrial, combinando la visión técnica con un enfoque centrado en la experiencia de usuario.</p>
+          
+          <div class="code-stats">
+            <div class="stat-item">
+              <span class="stat-value">{{ExperienceYears}}+</span>
+              <span class="stat-label">Años de experiencia</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">{{ProjectsNumber}}+</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -19,21 +58,40 @@
             </div>
             <div class="carousel-item">
               <img src="../../assets/950x650/Formacion_JuntaAndalucia_950x650.png" class="d-block w-100" alt="Formación del ADA para la Junta de Andalucía">
+              <div class="carousel-caption">
+                <p>Ponencia para la Junta de Andalucía en Uppery Club, Málaga</p>
+              </div>
             </div>
+            <!-- Resto de elementos del carousel -->
             <div class="carousel-item">
               <img src="../../assets/950x650/rieloquinteiro_950x650.jpg" class="d-block w-100" alt="Pablo Rielo y Sergio Quinteiro con José Crespo, en su presentación a la candidatura de las municipales 2023">
+              <div class="carousel-caption">
+                <p>Presentación de candidatura a municipales, por PP de Lalín, 2023</p>
+              </div>
             </div>
             <div class="carousel-item">
               <img src="../../assets/950x650/candidatura_950x650.jpg" class="d-block w-100" alt="Foto con todos los miembros de la candidatura de las elecciones municipales 2023">
+              <div class="carousel-caption">
+                <p>Candidatura PP de Lalín, 2023</p>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="../../assets/950x650/mitincentral_950x650.jpg" class="d-block w-100" alt="Foto den Mitin Central municipal Lalín 2023">
+              <img src="../../assets/950x650/mitincentral_950x650.jpg" class="d-block w-100" alt="Foto en Mitin Central municipal Lalín 2023">
+              <div class="carousel-caption">
+                <p>Mitin Central PP de Lalín, 2023</p>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="../../assets/950x650/comisionradiolalin_950x650.jpg" class="d-block w-100" alt="Presentación del cartel de las Fiestas de Lalín en Radio Lalín">
+              <img src="../../assets/950x650/comisionradiolalin_950x650.jpg" class="d-block w-100" alt="Presentación de las 'Festas das Dores de Lalín 2023', en Radio Lalín">
+              <div class="carousel-caption">
+                <p>Presentación de las 'Festas das Dores de Lalín 2023', en Radio Lalín</p>
+              </div>
             </div>
             <div class="carousel-item">
               <img src="../../assets/950x650/palcolossatelites_950x650.jpg" class="d-block w-100" alt="Quinteiro y demás miembros de la Comisión de Fiestas de As Dores de Lalín 2023 entregan 3000€ a la ganadora del sorteo">
+              <div class="carousel-caption">
+                <p>Sorteo de las 'Festas das Dores de Lalín 2023'</p>
+              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
