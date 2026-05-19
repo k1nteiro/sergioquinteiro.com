@@ -1,17 +1,18 @@
 .maincard {
   border-radius: 0;
   color: white;
-  height: 100vh;
+  // ✅ FIX: min-height en lugar de height fijo para que en móvil el contenido no quede cortado
+  min-height: 100vh;
+  height: auto;
   width: 100%;
-  position: absolute;
-  overflow: hidden;
-  
-  // Nuevo gradiente más sofisticado con tonos oscuros para código
+  position: relative; // era absolute — en móvil absolute rompe el scroll
+  overflow-x: hidden;
+  overflow-y: auto;
+
   background: linear-gradient(135deg, #0f172a, #1e293b, #334155, #1e40af);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
-  
-  // Efecto de "ruido digital" sutil para dar textura
+
   &::before {
     content: '';
     position: absolute;
@@ -23,8 +24,7 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     pointer-events: none;
   }
-  
-  // Líneas de código minimalistas para fondo
+
   &::after {
     content: '';
     position: absolute;
@@ -40,7 +40,6 @@
   }
 }
 
-// Partículas flotantes simulando un entorno digital (pseudo-elementos)
 .digital-particle {
   position: absolute;
   width: 4px;
@@ -48,7 +47,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   animation: float 15s infinite linear;
-  
+
   &:nth-child(1) { top: 10%; left: 20%; animation-duration: 20s; }
   &:nth-child(2) { top: 40%; left: 70%; animation-duration: 25s; }
   &:nth-child(3) { top: 70%; left: 30%; animation-duration: 18s; }
@@ -57,19 +56,13 @@
 }
 
 @keyframes float {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(100px, 100px) rotate(180deg); opacity: 0.6; }
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(100px, 100px) rotate(180deg); opacity: 0.6; }
   100% { transform: translate(0, 0) rotate(360deg); }
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
